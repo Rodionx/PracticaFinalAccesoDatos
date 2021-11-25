@@ -68,7 +68,7 @@ public class SAX {
                 cadena_resultado = cadena_resultado + "Se van a mostrar los libros de este documento. \n -------------------------------------------".trim();
             }else if(qName.equals("Hombre")){
                 cadena_resultado = cadena_resultado + "Publicado en: " + attributes.getValue(attributes.getQName(0).trim());
-            }else if(qName.equals("Mujer")){
+            }else if(qName.equals("MujerSS")){
                 cadena_resultado = cadena_resultado + "El titulo es: ".trim();
             }else if(qName.equals("Autor")){
                 cadena_resultado = cadena_resultado + "El autor es: ".trim();
