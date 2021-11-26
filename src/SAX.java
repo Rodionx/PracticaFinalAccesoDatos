@@ -67,11 +67,33 @@ public class SAX {
             if(qName.equals("Tienda")){
                 cadena_resultado = cadena_resultado + "Se van a mostrar los libros de este documento. \n -------------------------------------------".trim();
             }else if(qName.equals("Hombre")){
-                cadena_resultado = cadena_resultado + "Publicado en: " + attributes.getValue(attributes.getQName(0).trim());
-            }else if(qName.equals("MujerSS")){
-                cadena_resultado = cadena_resultado + "El titulo es: ".trim();
-            }else if(qName.equals("Autor")){
-                cadena_resultado = cadena_resultado + "El autor es: ".trim();
+                cadena_resultado = cadena_resultado + "-Los articulos disponibles para Hombre son: " + "\n                                                                                                            .";
+            }else if(qName.equals("Mujer")){
+                cadena_resultado = cadena_resultado + "-Los articulos disponibles para Mujer son: " + "\n                                                                                                            .";
+            }else if(qName == "Abrigos"){
+                cadena_resultado = cadena_resultado + "--Los Abrigos: ".trim()+ "\n                                                                                                            .";
+            }else if(qName == "Sudaderas"){
+                cadena_resultado = cadena_resultado + "--Las Sudaderas: ".trim()+ "\n                                                                                                            .";
+            }else if(qName == "Chaquetas"){
+                cadena_resultado = cadena_resultado + "--Las Chaquetas: ".trim()+ "\n                                                                                                            .";
+            }else if(qName == "Camisetas"){
+                cadena_resultado = cadena_resultado + "--Las Camisetas: ".trim()+ "\n                                                                                                            .";
+            }else if(qName == "Pantalones"){
+                cadena_resultado = cadena_resultado + "--Los Pantalones: ".trim()+ "\n                                                                                                            .";
+            }else if(qName == "Cinturones"){
+                cadena_resultado = cadena_resultado + "--Los Cinturones: ".trim()+ "\n                                                                                                            .";
+            }else if(qName == "Bufandas"){
+                cadena_resultado = cadena_resultado + "--Las Bufandas: ".trim()+ "\n                                                                                                            .";
+            }else if(qName == "Gemelos"){
+                cadena_resultado = cadena_resultado + "--Los Gemelos: ".trim()+ "\n                                                                                                            .";
+            }else if(qName == "Perfumes"){
+                cadena_resultado = cadena_resultado + "--Los Perfumes: ".trim()+ "\n                                                                                                            .";
+            }else if(qName == "Colonias"){
+                cadena_resultado = cadena_resultado + "--Las Colonias: ".trim()+ "\n                                                                                                            .";
+            }else if(qName == "eau_de_toilette"){
+                cadena_resultado = cadena_resultado + "--Los eau de toilette: ".trim()+ "\n                                                                                                            .";
+            }else if(qName == "Abrigo" || qName == "Abrigo" || qName == "Abrigo" || qName == "Abrigo" || qName == "Sudadera" || qName == "Chaqueta" || qName == "Camiseta" || qName == "Pantalon" || qName == "Cinturon" || qName == "Bufanda" || qName == "Perfume" || qName == "Colonia" || qName == "eau"){
+                cadena_resultado = cadena_resultado + "Con ID: " + attributes.getValue(attributes.getQName(0).trim());
             }
         }
 
